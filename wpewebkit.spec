@@ -6,16 +6,13 @@
 cp -p %1 _license_files/$(echo '%1' | sed -e 's!/!.!g')
 
 Name:           wpewebkit
-Version:        2.46.1
+Version:        2.46.2
 Release:        %autorelease
 Summary:        A WebKit port optimized for low-end devices
 
 License:        LGPLv2 and BSD
 URL:            https://www.%{name}.org/
 Source0:        https://wpewebkit.org/releases/%{name}-%{version}.tar.xz
-
-# https://bugs.webkit.org/show_bug.cgi?id=280642
-Patch:          llvm19.patch
 
 BuildRequires: atk-devel at-spi2-atk-devel
 BuildRequires: bison
