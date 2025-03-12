@@ -52,6 +52,7 @@ BuildRequires: perl(Switch)
 BuildRequires: perl-bignum
 BuildRequires: python3
 BuildRequires: ruby
+BuildRequires: rubygem(getoptlong)
 BuildRequires: rubygem-json
 BuildRequires: rubygems
 BuildRequires: sqlite-devel
