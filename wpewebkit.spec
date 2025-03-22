@@ -22,6 +22,7 @@ BuildRequires: bison
 BuildRequires: cairo-devel
 BuildRequires: cmake
 BuildRequires: egl-wayland-devel
+BuildRequires: expat-devel
 BuildRequires: flex
 BuildRequires: clang
 BuildRequires: gi-docgen
