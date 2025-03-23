@@ -195,6 +195,7 @@ export NINJA_STATUS="[%f/%t][%e] "
 %{_libdir}/libWPEPlatform-2.0.so.*
 %{_libexecdir}/wpe-webkit-2.0
 %{_libdir}/wpe-webkit-2.0
+%{_datadir}/wpe-webkit-2.0
 %doc NEWS
 %license _license_files/*ThirdParty*
 %license _license_files/*WebCore*
