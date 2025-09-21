@@ -5,6 +5,8 @@
         mkdir -p _license_files ; \
 cp -p %1 _license_files/$(echo '%1' | sed -e 's!/!.!g')
 
+%global toolchain clang
+
 Name:           wpewebkit
 Version:        2.50.0
 Release:        %autorelease
@@ -124,12 +126,6 @@ files for developing applications that use %{name}
 # Disable BTI until this is fixed upstream.
 %ifarch aarch64
 %global optflags %(echo %{optflags} | sed 's/-mbranch-protection=standard /-mbranch-protection=pac-ret /')
-%endif
-
-# Clang is preferred: https://skia.org/docs/user/build/#supported-and-preferred-compilers
-# However, it crashes on ppc64le.
-%ifnarch ppc64le
-%global toolchain clang
 %endif
 
 %cmake \
