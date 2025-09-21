@@ -21,6 +21,7 @@ BuildRequires: cmake
 BuildRequires: egl-wayland-devel
 BuildRequires: expat-devel
 BuildRequires: flex
+BuildRequires: flite-devel
 BuildRequires: clang
 BuildRequires: gi-docgen
 BuildRequires: gperf
@@ -138,7 +139,6 @@ files for developing applications that use %{name}
   -DENABLE_MINIBROWSER=OFF \
   -DENABLE_DOCUMENTATION=OFF \
   -DENABLE_INTROSPECTION=OFF \
-  -DENABLE_SPEECH_SYNTHESIS=OFF \
   -DUSE_LIBBACKTRACE=OFF \
   -DENABLE_WPE_PLATFORM=ON \
   -GNinja
