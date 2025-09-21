@@ -113,7 +113,7 @@ files for developing applications that use %{name}
 # Reduce debuginfo verbosity 32-bit builds to reduce memory consumption even more.
 # https://bugs.webkit.org/show_bug.cgi?id=140176
 # https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/thread/I6IVNA52TXTBRQLKW45CJ5K4RA4WNGMI/
-%ifarch %{ix86} %{arm} aarch64
+%ifarch %{ix86}
 %global optflags %(echo %{optflags} | sed 's/-g /-g1 /')
 %endif
 
