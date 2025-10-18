@@ -38,6 +38,7 @@ BuildRequires: libicu-devel
 BuildRequires: libinput-devel
 BuildRequires: libjpeg-devel
 BuildRequires: libjxl-devel
+BuildRequires: libmanette-devel
 BuildRequires: libpng-devel
 BuildRequires: libwebp-devel
 BuildRequires: libwpe-devel
