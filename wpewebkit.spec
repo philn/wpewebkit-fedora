@@ -8,7 +8,7 @@ cp -p %1 _license_files/$(echo '%1' | sed -e 's!/!.!g')
 %global toolchain clang
 
 Name:           wpewebkit
-Version:        2.50.3
+Version:        2.50.4
 Release:        %autorelease
 Summary:        A WebKit port optimized for low-end devices
 
