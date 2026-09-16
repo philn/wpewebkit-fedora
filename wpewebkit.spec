@@ -21,6 +21,7 @@ BuildRequires: bison
 BuildRequires: cairo-devel
 BuildRequires: cmake
 BuildRequires: egl-wayland-devel
+BuildRequires: enchant2-devel
 BuildRequires: expat-devel
 BuildRequires: flex
 BuildRequires: flite-devel
