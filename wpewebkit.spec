@@ -8,7 +8,7 @@ cp -p %1 _license_files/$(echo '%1' | sed -e 's!/!.!g')
 %global toolchain clang
 
 Name:           wpewebkit
-Version:        2.52.6
+Version:        2.54.0
 Release:        %autorelease
 Summary:        A WebKit port optimized for low-end devices
 
@@ -166,7 +166,6 @@ export NINJA_STATUS="[%f/%t][%e] "
 %add_to_license_files Source/ThirdParty/gtest/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/src/libANGLE/renderer/vulkan/shaders/src/third_party/ffx_spd/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/src/libANGLE/renderer/vulkan/shaders/src/third_party/etc_decoder/LICENSE
-%add_to_license_files Source/ThirdParty/ANGLE/src/libANGLE/overlay/LICENSE.txt
 %add_to_license_files Source/ThirdParty/ANGLE/src/third_party/ceval/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/src/third_party/volk/LICENSE.md
 %add_to_license_files Source/ThirdParty/ANGLE/src/third_party/libXNVCtrl/LICENSE
@@ -182,7 +181,6 @@ export NINJA_STATUS="[%f/%t][%e] "
 %add_to_license_files Source/ThirdParty/ANGLE/third_party/proguard/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/third_party/flatbuffers/LICENSE
 %add_to_license_files Source/ThirdParty/ANGLE/third_party/turbine/LICENSE
-%add_to_license_files Source/ThirdParty/ANGLE/third_party/bazel/LICENSE
 
 %files
 %{_bindir}/WPEWebDriver
